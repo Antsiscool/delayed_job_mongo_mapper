@@ -9,3 +9,8 @@ cache: bundler
 sudo: false
 services:
   - mongodb
+addons:
+  code_climate:
+    repo_token: 7ad1669579fa30cd29c63733f3b4a70a7f50b194f4002240f31ee75a1b10d011
+after_success:
+  - bundle exec codeclimate-test-reporter
